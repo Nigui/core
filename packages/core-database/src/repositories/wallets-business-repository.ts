@@ -261,6 +261,7 @@ export class WalletsBusinessRepository implements Database.IWalletsBusinessRepos
 
                     const bridgechainData = {
                         publicKey: wallet.publicKey,
+                        address: wallet.address,
                         ...bridgechain.bridgechainAsset,
                         isResigned: !!bridgechain.resigned,
                     };
